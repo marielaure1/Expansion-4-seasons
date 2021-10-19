@@ -2,7 +2,7 @@ const panels = document.querySelectorAll('.panel');
 const body = document.querySelector('body');
 
 panels.forEach(panel => {
-    panel.addEventListener('click', () => {
+    panel.addEventListener('mouseover', () => {
         removeClassActive()
         panel.classList.add('active');
         if(panel == panels[0]){
